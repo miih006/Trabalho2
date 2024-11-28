@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>AluraBooks</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <section class="intro">
+            <h2>Bem-vindo ao AluraBooks!</h2>
+            <p>Explore uma vasta seleção de livros e encontre suas próximas leituras.</p>
+        </section>
+        <section class="book-list">
+            <h3>Livros em Destaque</h3>
+            <div class="book-item">
+                <img src="path/to/image1.jpg" alt="Capa do livro 1">
+                <h4>Título do Livro 1</h4>
+                <p>Autor: Nome do Autor</p>
+            </div>
+            <div class="book-item">
+                <img src="path/to/image2.jpg" alt="Capa do livro 2">
+                <h4>Título do Livro 2</h4>
+                <p>Autor: Nome do Autor</p>
+            </div>
+            <!-- Adicione mais itens de livro conforme necessário -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 AluraBooks. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+/* Reseta as margens e o padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização básica */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Main content */
+.main-content {
+    padding: 20px;
+}
+
+.intro h2 {
+    margin-bottom: 15px;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-item img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .book-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .book-item {
+        width: 30%;
+    }
+}
